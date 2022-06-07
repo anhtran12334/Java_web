@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: Tran ngoc anh
+Build-Jdk: 15.0.2
+Implementation-Title: project Maven Webapp
+Implementation-Version: 1.0
+Implementation-Vendor-Id: com.java
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+

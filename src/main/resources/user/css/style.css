@@ -1,0 +1,679 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+html{
+    font-size: 100%;
+}
+body .message{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    z-index: 1;
+    font-size: 40px;
+    color: #0a7cff;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 100%;
+}
+.title{
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    padding: 20px 20px;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.tb{
+    width: 500px;
+    position: fixed;
+   	top: 30px;
+    text-align: center;
+    right: 400px;
+    z-index: 1;
+     display:none; 
+
+}
+.tbl{
+    width: 500px;
+    position: fixed;
+    top: 30px;
+    text-align: center;
+    right: 400px;
+    z-index: 1;
+    display:none; 
+
+}
+.title img {
+    border-radius: 100%;
+}
+.tleft{
+    font-size: 1.5rem;
+    padding-left: 100px;
+}
+.title i{
+    margin-right: 8px;
+}
+.tright{
+    font-size: 1.5rem;
+    padding-right: 100px;
+}
+.tright a{
+    text-decoration: none;
+    color: white;
+}
+.top_content{
+    display: flex;
+     justify-content: space-around; 
+    align-items: center;
+    /* border: 2px solid #ff6f0c; */
+    padding: 20px 60px;
+    background-color: #ff6f0c;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    height: 120px;
+    
+}
+.top_content .order {
+    padding: 10px 30px;
+    background-color: #0084ff;
+    border-radius: 10px 10px;
+}
+.top_content .order a{
+    text-decoration: none;
+    color: white;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    flex:1;
+    background: white;
+    height: 50px;
+    margin: 0 40px;
+    border-radius: 2px;
+    position: relative;
+}
+
+.form-search{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.box-input-wrap{
+    width: 90%;
+    height: 100%;
+    position: relative;
+}
+.box-input{
+    margin: 0 20px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.search-history{
+    width: 100%;
+    position: absolute;
+    background: white;
+    top: 53px;
+    border-radius: 2px;
+    box-shadow: 0 1px 5px #666; 
+    display: none;
+    height: 300px;
+    overflow: auto;
+}
+.box-input:focus ~ .search-history{
+    display: block;
+}
+.search-history ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.search-history li{
+    list-style: none;
+    height: 38px;
+    padding: 0 10px;
+}
+.search-history li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 38px;
+}
+.search-history li:hover{
+    background-color: rgba(153, 153, 153, 0.103);
+}
+.icon-search{
+    
+    border:none;
+    outline: none;
+    background-color: #ff6f0c;
+    position: absolute;
+    right:5px;
+    top: 5px;
+    color: white;
+    font-size: 18px;
+    padding: 7px 20px;
+    border-radius: 2px;
+}
+.heading-history{
+    margin: 8px 8px;
+    color:#999;
+    font-size: 18px;
+
+}
+.top_content .cart a i{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+.content{
+    background-color: #ccc;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom:  50px;
+
+}
+.content .Td{
+    text-align: center;
+    padding: 20px 300px;
+}
+.content .Td span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.content .Td p{
+    font-size: 1.5rem
+}
+.content .menu{
+    max-width: 1200px;
+    margin:  auto;
+    background-color: white
+}
+.content .menu ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content .menu ul li{
+   list-style-type: none;
+    font-weight: bold;
+   font-size: 1.6rem;
+   margin: 15px 30px
+}
+
+.content .menu ul li a{
+    text-decoration:none;
+    color: black;
+    padding: 15px 15px;
+}
+.content .menu ul li a:hover{
+    background-color: #ff6f0c;
+    color:white;
+}
+
+.testfood .word{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 300px;
+}
+.testfood .word span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.testfood .container{
+    padding: 20px 20px;
+    font-size: 1rem;
+    width: 100%;
+}
+.testfood .container a{
+    text-decoration: none;
+    color:black;
+}
+.testfood .container img{
+    width: 250px;
+    height: 250px;
+}
+.testfood .container h2{
+    color: #ff6f0c;
+
+}
+.testfood .container span{
+    color: red;
+}
+main .gt{
+    margin-top: 30px;
+    width: 100%;
+    height: 800px;
+    background-image: url('../img/lindsay-moe-MWfUVW6_JkE-unsplash.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.gt div{
+    position:absolute;
+    left: 300px;
+    top: 100px;
+    background-color: rgba(226, 226, 226, 0.733);
+    border-radius: 20px 20px;
+    z-index: 1;
+    width: 800px;
+    padding: 30px 30px;
+    font-size: 1.5rem;
+}
+.gt div:hover{
+    top: 90px;
+    transition: 0.5s;
+}
+.gt h1{
+    color:#ff6f0c
+
+}
+.feedback {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top:30px;
+}
+.feedback .vb h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+.feedback .customer img{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+.feedback .customer .text{
+    font-size: 1rem;
+}
+.feedback .customer .text i {
+    text-align: center;
+    font-size:15px;
+    color: yellow;
+}
+.feedback .customer .row{
+    /* margin-left: 8%; */
+    padding: 30px 0px;
+}
+hr{
+    color: red;
+    background-color: #ff6f0c;
+    border-width: 3px;
+    border-style: solid;
+    max-width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+footer{
+   
+    background-color:  #4f6254;
+    color: white;
+    font-size: 1.2rem;
+    padding: 100px 20px;
+}
+footer img{
+    width: 180px;
+    border-radius:  100%;
+}
+
+footer iframe{
+    width: 300px; 
+    height: 200px;
+}
+
+footer h2{
+    background-color: #fce043;
+    color: #4f6254;
+    padding: 15px 20px;
+    margin-left: 20%;
+    width: 250px;
+    border-radius: 10px 0px;
+    font-size: 1.5rem;
+}
+footer p i{
+    margin-left: 15px;
+}
+footer .icon i{
+    background-color: #fce043;
+    padding: 10px 10px;
+    color: #4f6254;
+    font-size:  1.5rem;
+}
+/* for tablet */
+@media only screen and (max-width: 768px){
+    body .message{
+        right: 25px;
+        bottom: 25px;
+        z-index: 1;
+        font-size: 25px;
+        color: #0a7cff;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 100%;
+    }
+    .title{
+        font-size: 30px;
+        padding: 10px 10px;
+    }
+    .title img{
+        width: 50px;
+    }
+    .tleft{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    .tright{
+        font-size: 15px;
+        padding-right: 50px;
+    }
+    .top_content{
+        padding: 10px 50px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .top_content .order {
+        padding: 5px 15px;
+    }
+    .top_content button{
+        right: 51px;
+    }
+    .content{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-bottom:  25px;
+    
+    }
+    .content .Td{
+        padding: 10px 150px;
+    }
+    .content .Td span{
+        font-size: 30px;
+        font-weight: 700;
+    
+    }
+    .content .Td p{
+        font-size: 15px
+    }
+    .content .menu{
+        max-width: 600px;
+        margin: auto;
+    }
+  
+    .content .menu ul li{
+     
+       font-size: 15px;
+       margin: 10px 15px
+    }
+    
+    .content .menu ul li a{
+        
+        padding: 10px 10px;
+    }
+    .testfood .word{
+        
+        font-size: 15px;
+        padding: 10px 150px;
+    }
+    .testfood .word span{
+        font-size: 30px;
+        font-weight: 700;
+        
+    }
+    .testfood .container{
+        padding: 10px 10px;
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .testfood .container h2{
+        font-size: 15px;
+    }
+    .testfood .container img{
+        width: 150px;
+        height: 150px;
+    }
+
+    main .gt{
+        margin-top: 15px;
+        
+        height: 400px;
+    }
+    .gt div{
+       
+        left: 150px;
+        top: 50px;
+        width: 400px;
+        padding: 15px 15px;
+        font-size: 15px;
+    }
+    .gt div:hover{
+        top: 45px;
+    }
+    .feedback {
+        font-size: 15px;
+        margin-top:15px;
+    }
+    .feedback .vb h1{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .feedback .customer img{
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
+    }
+    .feedback .customer .text{
+        font-size: 15px;
+    }
+    .feedback .customer .text i {
+        text-align: center;
+        font-size:8px;
+        color: yellow;
+    }
+    .feedback .customer .row{
+        /* margin-left: 8%; */
+        padding: 15px 0px;
+    }
+    footer{
+        padding: 50px 40px ;
+        padding-bottom: 100px;
+        font-size: 15px;
+    }
+     footer img{
+        width: 100px;
+    }
+    footer iframe{
+        width: 150px; 
+        height: 100px;
+    }
+    /*footer div{
+        height: 100px;
+    }*/
+    footer h2{
+        padding: 10px 15px;
+        width: 150px;
+        margin: auto;
+        border-radius: 10px 0px;
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    footer p i{
+        margin-left: 10px;
+    }
+    footer .icon i{
+        padding: 8px 8px;
+        font-size:  20px;
+    } 
+}
+/* for mobile */
+@media only screen and (max-width: 576px){
+    body .message{
+        right: 18px;
+        bottom: 18px;
+        z-index: 1;
+        font-size: 18px;
+        color: #0a7cff;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 100%;
+    }
+    .title{
+        font-size: 20px;
+        padding: 8px 8px;
+    }
+    .title img{
+        width: 30px;
+    }
+    .tleft{
+        font-size: 10px;
+        padding-left: 30px;
+    }
+    .tright{
+        font-size: 10px;
+        padding-right: 30px;
+    }
+    .top_content{
+        padding: 8px 30px;
+        font-size: 10px;
+        margin-top: 8px;
+    }
+    .top_content .order {
+        padding: 5px 10px;
+    }
+    .top_content button{
+        right: 31px;
+    }
+    .content{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom:  18px;
+    
+    }
+    .content .Td{
+        padding: 8px 100px;
+    }
+    .content .Td span{
+        font-size: 20px;
+        font-weight: 700;
+    
+    }
+    .content .Td p{
+        font-size: 10px
+    }
+    .content .menu{
+        max-width: 400px;
+        margin: auto;
+    }
+  
+    .content .menu ul li{
+     
+       font-size: 10px;
+       margin: 8px 12px
+    }
+    
+    .content .menu ul li a{
+        
+        padding: 8px 8px;
+    }
+    .testfood .word{
+        
+        font-size: 10px;
+        padding: 8px 120px;
+    }
+    .testfood .word span{
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    .testfood .container{
+        padding: 8px 8px;
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .testfood .container img{
+        width: 100px;
+        height: 100px;
+    }
+
+    main .gt{
+        margin-top: 10px;
+        height: 250px;
+    }
+    .gt div{
+        left: 120px;
+        top: 30px;
+        width: 200px;
+        height: 170px;
+        padding: 10px 10px;
+        font-size: 7px;
+    }
+    .gt div:hover{
+        top: 25px;
+    }
+    .feedback {
+        font-size: 10px;
+        margin-top:10px;
+    }
+    .feedback .vb h1{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .feedback .customer img{
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+    }
+    .feedback .customer .text{
+        font-size: 7px;
+    }
+    .feedback .customer .text i {
+        text-align: center;
+        font-size:5px;
+        color: yellow;
+    }
+    .feedback .customer .row{
+        /* margin-left: 8%; */
+        padding: 10px 0px;
+    }
+    /* footer{
+        padding: 50px 40px ;
+        padding-bottom: 80px;
+        font-size: 10px;
+    }
+    footer img{
+        width: 70px;
+    }
+    footer iframe{
+        width: 100px; 
+        height: 70px;
+    }
+    footer div{
+        height: 80px;
+    }
+    footer h2{
+        padding: 8px 10px;
+        margin-right: 60px;
+        border-radius: 8px 0px;
+       font-size: 8px;
+    }
+    footer p i{
+        margin-left: 8px;
+    }
+    footer .icon i{
+        padding: 5px 5px;
+        font-size:  10px;
+    } */
+}

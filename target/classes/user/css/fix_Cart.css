@@ -1,0 +1,262 @@
+@import url('https://fonts.google.com/share?selection.family=Rubik');
+html{
+    font-size: 100%;
+}
+.container-fluid{
+    background-color: #ff6f0c;
+    background-image: linear-gradient(red, #ff6f0c);
+    padding: 20px 20px;
+    font-size: 1.3rem;
+    font-family: Rubik;
+    margin: 0;
+    
+}
+.nav-item {
+    list-style-type: none;
+    color: white;
+    margin-right:  20px;
+}
+.nav-link{
+    color: white;
+}
+.box{
+    display: flex;
+    position:relative;
+}
+.tb{
+    width: 300px;
+    position: fixed;
+    top: 100px;
+    text-align: center;
+    right: 30px;
+    z-index: 1;
+   display:none;
+
+}
+.box .right{
+    width: 35%;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 2px solid red;
+    height: 400px;
+    padding: 20px 20px;
+}
+.box .right input{
+    width: 400px;
+}
+main{
+    /* max-width: 800px;
+    margin: auto; */
+    margin-left: 20px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid red;
+    padding-bottom: 30px;
+}
+
+main .header{
+    
+    background-color: red;
+    background-image: linear-gradient(red, #ff6f0c);
+    height: 10rem;
+    text-align: center;
+    position: relative;
+}
+main .header img{
+    width: 200px;
+    position: relative;
+    /* left: 45%; */
+    top: 5rem;
+    padding: 15px 15px;
+    background-color: white;
+    
+}
+main .order{
+    padding-top: 10rem;
+    /* padding-bottom: 10rem; */
+    background-color: rgba(253, 251, 251, 0.788);
+    /* height: 20rem; */
+    /* padding: 1.5rem; */
+}
+
+main .order .head{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom:  2rem;
+    font-weight: 700;
+}
+.order-items{
+    margin-bottom: 10rem;
+    font-size: 1.2rem;
+}
+.order-items img{
+    width: 150px;
+    font-size: 1rem;
+}
+
+.order-item {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.2rem;
+    
+}
+.order-item button{
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5 rem;
+    font-weight: 500;
+}
+.item-name{
+     flex-basis: 10rem; 
+     font-size: 1.2rem;  
+     color:#ff6f0c;
+     font-weight: 500;
+}
+.price{
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+.quantity{
+    flex-basis: 10rem; 
+    font-size: 1.5 rem;
+}
+.order-item div{
+    float: left;
+
+}
+/* button{
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5 rem;
+    font-weight: 500;
+} */
+.order-summary{
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color:#F4F4F6;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    
+}
+.money{
+    float: right;
+}
+
+#add{
+    margin-top:  1.5rem;
+    /* border: 1px solid gray; */
+    width: 18rem;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5 rem;
+    font-weight: 500;
+}
+#checkout{
+    width: 100%;
+    background-color:red;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5 rem;
+    font-weight: 500;
+}
+footer{
+   
+    background-color:  #4f6254;
+    color: white;
+    font-size: 1.3rem;
+    padding: 100px 20px;
+}
+footer img{
+    width: 170px;
+    border-radius:  100%;
+}
+
+footer iframe{
+    width: 300px; 
+    height: 200px;
+}
+
+footer h2{
+    background-color: #fce043;
+    color: #4f6254;
+    padding: 15px 20px;
+    margin-left: 20%;
+    width: 250px;
+    border-radius: 10px 0px;
+    font-size: 1.5rem;
+   
+}
+footer p i{
+    margin-left: 15px;
+}
+footer .icon i{
+    background-color: #fce043;
+    padding: 10px 10px;
+    color: #4f6254;
+    font-size:  1.3rem;
+}
+/* for tablet */
+@media all and (max-width: 768px){
+    nav img{
+        width: 100px;
+        height: 100px;
+        margin: 0px 30px ;
+    }
+    /* nav .icons i{
+       padding-top:20px;
+    } */
+    .fa-bars:before {
+        content: "\f0c9";
+        font-size: 50px;
+        padding: 0px 30px;
+        display:flex;
+        /* padding: 20px; */
+    }
+    nav .icons i{
+        font-size: 200px;
+    }
+    footer{
+        padding: 50px 40px ;
+        padding-bottom: 100px;
+        font-size: 15px;
+        /* width: 70%; */
+    }
+     footer img{
+        width: 100px;
+    }
+    footer iframe{
+        width: 150px; 
+        height: 100px;
+    }
+    /*footer div{
+        height: 100px;
+    }*/
+    footer h2{
+        padding: 10px 15px;
+        width: 150px;
+        margin: auto;
+        border-radius: 10px 0px;
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    footer p i{
+        margin-left: 10px;
+    }
+    footer .icon i{
+        padding: 8px 8px;
+        font-size:  20px;
+    } 
+}

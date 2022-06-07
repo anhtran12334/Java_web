@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+     height: 100px;
+    /*background-color: aqua; */
+     background-image: url('./../img/7mau.jfif');
+    line-height: 100px;
+    
+}
+header h1 {
+    color: white;
+    text-decoration: underline;
+    margin: 0;
+    margin-left: 7%;
+}
+header p{
+    margin-top: -120px;
+    margin-left: 70%;
+    font-size: 25px;
+    color: white;
+}
+.title li{
+    list-style-type: none;
+}
+.title a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.title ul{
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    margin: 0;
+    padding: 20px;
+}
+.son{
+    position: relative;
+    
+}
+.son:hover .sub-son{
+    display: block;
+}
+.son .sub-son{
+    position: absolute;
+    top: 67px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: white;
+    padding-top: 0;
+    display: none;
+    
+}
+.son .sub-son li{
+    padding-top: 20px;
+}
+.son .sub-son li a{
+    color: blue;
+    font-weight: 500;
+}
+main{
+    display: flex;
+}
+.menu{
+    width: 100%;
+}
+.menu .name p{
+    margin: 0;
+    padding: 0;
+}
+.menu .name {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px ;
+}
+.sub-item .text{
+    /* margin-left: 15%; */
+    font-size: 20px;
+    color: blue;
+    background-color: #66FF66;
+    text-align: center;
+    margin: 0;
+}
+.sub-item:hover .text{
+    font-size: 25px;
+    height: 200px;
+}
+.sub-item .text p{
+    margin: 0;
+    padding: 10px
+}
+.sub-item{
+    border: 1px solid #ccc;
+    margin: 0 30px;
+    padding: 20px ;
+}
+
+.item{
+    display:  flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.aside{
+    margin-top: 20px;
+    margin-left:  20px;
+    width: 20%;
+    /* text-align: center;; */
+}
+.bottom{
+    border: 1px solid #ccc;
+    /* width: 71%; */
+    width: 100%;
+    
+}
+.word{
+    padding: 10px 20px;
+}
+.tk{
+    background-color: blue;
+    color: white;
+    /* width: 100%; */
+    padding: 15px;
+}
+.right{
+    width: 100%;
+    margin: 20px 40px;
+    color: pink;
+}
+.right .top{
+    text-align: center;
+    border: 1px solid pink;
+    border-radius: 10px 10px;
+}
+.right .top h2{
+    background-color: pink;
+    color: white;
+    margin:  0;
+    padding: 10px;
+}
+.right .center{
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid pink;
+    border-radius: 10px 10px;
+}
+.right .center h2{
+    background-color: pink;
+    color: white;
+    margin:  0;
+    padding: 10px;
+}
+.right .duoi h2{
+    background-color: pink;
+    color: white;
+    margin:  0;
+    padding: 10px;
+}
+.right .duoi{
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid pink;
+    border-radius: 10px 10px;
+}
+.right .duoi .sub-content{
+    padding: 20px
+}
+.right .duoi .sub-content img{
+    float: left;
+}
+.right .duoi .sub-content p{
+    clear: lèt;
+}
+hr{
+    background-color: pink;
+    color: pink;
+    border: 1px solid pink;
+    width: 90%;
+}
+footer{
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding: 50px;
+	margin-top: 30px;
+}
